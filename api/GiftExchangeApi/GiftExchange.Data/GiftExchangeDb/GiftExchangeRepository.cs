@@ -11,7 +11,31 @@ public interface IGiftExchangeRepository
     Task RemoveExchange(Guid exchangeIdentifier);
 }
 
-public class GiftExchangeRepository
+public class GiftExchangeRepository : IGiftExchangeRepository
 {
-    
+    private readonly GiftExchangeContext _context;
+    public GiftExchangeRepository(GiftExchangeContext context) 
+    {
+        _context = context;
+    }
+
+    public Task AddExchange(Exchange exchange)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Exchange> GetExchange(Guid exchangeIdentifier)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task RemoveExchange(Guid exchangeIdentifier)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task UpdateExchange(Exchange exchange)
+    {
+        throw new NotImplementedException();
+    }
 }
