@@ -1,14 +1,14 @@
-﻿using GiftExchange.Data.GiftExchangeDb.Schema;
+﻿using System.Linq.Expressions;
+using GiftExchange.Data.GiftExchangeDb.Schema;
 
 namespace GiftExchange.Data.GiftExchangeDb;
 
 public interface IGiftExchangeRepository
 {
-    // Exchange
-    Task<Exchange> GetExchange(Guid exchangeIdentifier);
-    Task AddExchange(Exchange exchange);
-    Task UpdateExchange(Exchange exchange);
-    Task RemoveExchange(Guid exchangeIdentifier);
+    Task<IQueryable<TEntity>> Query<TEntity>(Expression<Func<TEntity, bool>> predicate);
+    void Add<T>(T entity);
+    void Update<T>(T entity);
+    void Remove<T>(T entity);
 }
 
 public class GiftExchangeRepository : IGiftExchangeRepository
@@ -19,22 +19,22 @@ public class GiftExchangeRepository : IGiftExchangeRepository
         _context = context;
     }
 
-    public Task AddExchange(Exchange exchange)
+    public void Add<T>(T entity)
+    {
+        _context.Add(entity);
+    }
+
+    public IQueryable<TEntity> Query<TEntity>(Expression<Func<TEntity, bool>> predicate)
+    {
+        _context.Set<TEntity>().AsQueryable().Where(predicate);
+    }
+
+    public void Remove<T>(T entity)
     {
         throw new NotImplementedException();
     }
 
-    public Task<Exchange> GetExchange(Guid exchangeIdentifier)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task RemoveExchange(Guid exchangeIdentifier)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateExchange(Exchange exchange)
+    public void Update<T>(T entity)
     {
         throw new NotImplementedException();
     }
