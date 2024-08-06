@@ -1,14 +1,14 @@
 ﻿using System.Linq.Expressions;
-using GiftExchange.Data.GiftExchangeDb.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace GiftExchange.Data.GiftExchangeDb;
 
 public interface IGiftExchangeRepository
 {
-    Task<IQueryable<TEntity>> Query<TEntity>(Expression<Func<TEntity, bool>> predicate);
+    IQueryable<T> Query<T>(Expression<Func<T, bool>> predicate) where T : class;
     void Add<T>(T entity);
-    void Update<T>(T entity);
-    void Remove<T>(T entity);
+    void Remove<T>(T entity) where T : class;
+    Task SaveChangesAsync(CancellationToken cancellationToken = default);
 }
 
 public class GiftExchangeRepository : IGiftExchangeRepository
@@ -24,18 +24,23 @@ public class GiftExchangeRepository : IGiftExchangeRepository
         _context.Add(entity);
     }
 
-    public IQueryable<TEntity> Query<TEntity>(Expression<Func<TEntity, bool>> predicate)
+    public IQueryable<T> Query<T>(Expression<Func<T, bool>> predicate) where T : class
     {
-        _context.Set<TEntity>().AsQueryable().Where(predicate);
+        return GetDbSetFor<T>().Where(predicate);
     }
 
-    public void Remove<T>(T entity)
+    public void Remove<T>(T entity) where T : class
     {
-        throw new NotImplementedException();
+        GetDbSetFor<T>().Remove(entity);
     }
 
-    public void Update<T>(T entity)
+    public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        await _context.SaveChangesAsync(cancellationToken);
+    }
+
+    private DbSet<T> GetDbSetFor<T>() where T : class
+    {
+        return _context.Set<T>();
     }
 }
