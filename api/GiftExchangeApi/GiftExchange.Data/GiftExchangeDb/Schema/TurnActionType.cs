@@ -3,14 +3,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GiftExchange.Data.GiftExchangeDb.Schema;
 
-public class TurnActionType
+public class TurnActionType : AuditableEntity
 {
     public int TurnActionTypeId { get; set; }
     public required string Name { get; set; }
-    public required string CreatedBy { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public required string ModifiedBy { get; set; }
-    public DateTime ModifiedDate { get; set; }
     
     internal class TurnActionTypeConfiguration : IEntityTypeConfiguration<TurnActionType>
     {

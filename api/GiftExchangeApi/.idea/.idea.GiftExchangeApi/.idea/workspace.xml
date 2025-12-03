@@ -12,7 +12,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb7d90b8-a735-4c35-9f14-fbf394522e04" name="Changes" comment="" />
+    <list default="true" id="cb7d90b8-a735-4c35-9f14-fbf394522e04" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GiftExchangeApi/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GiftExchangeApi/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GiftExchangeApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GiftExchangeApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/DependencyInjection/DataDependencyInjectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/DependencyInjection/DataDependencyInjectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchange.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchange.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/GiftExchangeContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/GiftExchangeContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/GiftExchangeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/GiftExchangeRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Exchange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Exchange.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Gift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Gift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Turn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/Turn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/TurnAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/TurnAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/TurnActionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/Schema/TurnActionType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Services/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Services/GiftExchange.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Services/GiftExchange.Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Web/GiftExchange.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Web/GiftExchange.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiftExchange.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GiftExchange.Web/Properties/launchSettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,10 +39,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -36,29 +54,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "nh/080524/initial-setup",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.GiftExchange.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nh/080524/initial-setup&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\nicole.hoying\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\nicole.hoying\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\nicole.hoying\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/nicole.hoying/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/nicole.hoying/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/nicole.hoying/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.GiftExchangeApi: IIS Express">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.GiftExchange.Web: http">
     <configuration name="GiftExchangeApi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GiftExchangeApi/GiftExchangeApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -160,8 +180,19 @@
       <updated>1722868514419</updated>
       <workItem from="1722868515513" duration="1663000" />
       <workItem from="1722874739603" duration="5274000" />
+      <workItem from="1722955559430" duration="9865000" />
+      <workItem from="1723061636861" duration="3372000" />
+      <workItem from="1723125143015" duration="74026000" />
+      <workItem from="1723655054994" duration="18832000" />
+      <workItem from="1764788310388" duration="236000" />
     </task>
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="CONNECTION_STRING" value="Server=localhost;Database=GiftExchangeCloud;User Id=gift-exchange-svc;Password=hawaii50;encrypt=false;" />
+    </envs>
+    <option name="passParentEnvs" value="false" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -169,5 +200,41 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/GiftExchangeContext.cs</url>
+          <line>16</line>
+          <properties documentPath="$PROJECT_DIR$/GiftExchange.Data/GiftExchangeDb/GiftExchangeContext.cs" initialLine="13" containingFunctionPresentation="Constructor 'GiftExchangeContext'">
+            <startOffsets>
+              <option value="473" />
+            </startOffsets>
+            <endOffsets>
+              <option value="477" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GiftExchange.Data/DbContextFactory.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/GiftExchange.Data/DbContextFactory.cs" initialLine="16" containingFunctionPresentation="Method 'CreateDbContext'">
+            <startOffsets>
+              <option value="750" />
+            </startOffsets>
+            <endOffsets>
+              <option value="805" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

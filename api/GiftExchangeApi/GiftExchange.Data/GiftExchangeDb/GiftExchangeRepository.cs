@@ -1,4 +1,7 @@
 ﻿using System.Linq.Expressions;
+using System.Collections.Generic;
+using System.Linq;
+using GiftExchange.Data.GiftExchangeDb.Schema;
 using Microsoft.EntityFrameworkCore;
 
 namespace GiftExchange.Data.GiftExchangeDb;
@@ -36,6 +39,34 @@ public class GiftExchangeRepository : IGiftExchangeRepository
 
     public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
     {
+        var addedEntries = _context.ChangeTracker.Entries()
+            .Where(e => e.State == EntityState.Added)
+            .ToArray();
+
+        foreach (var e in addedEntries)
+        {
+            if (e.Entity is AuditableEntity entry)
+            {
+                entry.CreatedBy = "TBD";
+                entry.ModifiedBy = "TBD";
+                entry.CreatedDate = DateTime.Now;
+                entry.ModifiedDate = DateTime.Now;
+            }
+        }
+        
+        var modified = _context.ChangeTracker.Entries()
+            .Where(e => e.State == EntityState.Modified)
+            .ToArray();
+        
+        foreach (var e in modified)
+        {
+            if (e.Entity is AuditableEntity entry)
+            {
+                entry.ModifiedBy = "TBD";
+                entry.ModifiedDate = DateTime.Now;
+            }
+        }
+        
         await _context.SaveChangesAsync(cancellationToken);
     }
 
